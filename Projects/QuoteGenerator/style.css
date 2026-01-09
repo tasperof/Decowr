@@ -1,0 +1,25 @@
+body {
+  font-family: "Lexend Deca";
+  background: #111111;
+  color: #eeeeee;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%
+}
+
+#author {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+#quote {
+  font-style: italic;
+  opacity: 1.0;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

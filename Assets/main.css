@@ -1,0 +1,15 @@
+body {
+  font-family: Lexend Deca, sans-serif;
+  padding: 20px;
+}
+
+section a {
+  display: block;
+  margin: 12px 0;
+  text-decoration: none;
+  color: #4059e9;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
