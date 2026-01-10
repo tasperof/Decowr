@@ -1,6 +1,6 @@
 body {
   font-family: "Lexend Deca";
-  background: #111111;
+  background: #11111100;/* ISKO transparent karna hai*/
   color: #eeeeee;
   display: grid;
   place-items: center;
@@ -10,9 +10,11 @@ body {
 }
 
 #word {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  animation:
+    fade 1s;
 }
 
 #pos {
@@ -22,11 +24,19 @@ body {
   font-weight: 100;
   margin-bottom: 1rem;
   padding-inline: 1%;
+  animation:
+    fade 1s;
 
 }
 #meaning {
   opacity: 1.0;
   font-weight: 300;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  animation:
+    fade 3s;
+}
+
+@keyframes fade{
+  from{opacity: 0;}
+  to{opacity: 100%;}
 }

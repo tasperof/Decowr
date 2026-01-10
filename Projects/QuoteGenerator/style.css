@@ -1,25 +1,31 @@
 body {
   font-family: "Lexend Deca";
-  background: #11111100;
+  background: #11111100;/* ISKO transparent karna hai*/
   color: #eeeeee;
-  display: grid;
+  display:flex;
   place-items: center;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
 }
 
 #author {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  text-align: right;
+  font-size: 1.25em;
+  font-weight: 200;
+  font-style: italic;
+  animation:
+    fade 6s;
 }
 
 #quote {
-  font-style:normal;
   text-align: center;
-  opacity: 1.0;
   font-weight: 100;
-  font-size: 30%;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  animation:
+    fade 2s;
+}
+
+@keyframes fade{
+  from{opacity: 0;}
+  to{opacity: 100%;}
 }
