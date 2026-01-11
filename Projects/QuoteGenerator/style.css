@@ -10,7 +10,7 @@ body {
 }
 
 #author {
-  font-size: 1.25em;
+  font-size: 1rem;
   font-weight: 200;
   font-style: italic;
   animation:
@@ -20,7 +20,7 @@ body {
 #quote {
   text-align: center;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.75rem;
   animation:
     fade 2s;
 }

@@ -12,17 +12,17 @@ body {
 #word {
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   animation:
     fade 1s;
 }
 
 #pos {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1rem;
   opacity: 0.7;
   font-weight: 100;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   padding-inline: 1%;
   animation:
     fade 1s;
@@ -31,7 +31,7 @@ body {
 #meaning {
   opacity: 1.0;
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1rem;
   animation:
     fade 3s;
 }
