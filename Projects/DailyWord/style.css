@@ -11,10 +11,10 @@ body {
 
 #word {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 200;
   margin-bottom: 1.25rem;
   animation:
-    fade 1s;
+    fade 3s;
 }
 
 #pos {
@@ -25,15 +25,15 @@ body {
   margin-bottom: 0.8rem;
   padding-inline: 1%;
   animation:
-    fade 1s;
+    fade 5s;
 
 }
 #meaning {
   opacity: 1.0;
-  font-weight: 300;
+  font-weight: 150;
   font-size: 1rem;
   animation:
-    fade 3s;
+    fade 9s;
 }
 
 @keyframes fade{

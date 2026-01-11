@@ -14,7 +14,7 @@ body {
   font-weight: 200;
   font-style: italic;
   animation:
-    fade 6s;
+    fade 10s;
 }
 
 #quote {
@@ -22,7 +22,7 @@ body {
   font-weight: 100;
   font-size: 0.75rem;
   animation:
-    fade 2s;
+    fade 8s;
 }
 
 @keyframes fade{
