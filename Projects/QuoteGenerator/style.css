@@ -1,8 +1,8 @@
 body {
   font-family: "Lexend Deca";
-  background: #11111100;/* ISKO transparent karna hai*/
+  background: #111111;/* ISKO transparent karna hai*/
   color: #eeeeee;
-  display:flex;
+  display: flex;
   place-items: center;
   padding-left: 5%;
   padding-right: 5%;
@@ -13,6 +13,8 @@ body {
   font-size: 1rem;
   font-weight: 200;
   font-style: italic;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
   animation:
     fade 10s;
 }
@@ -20,7 +22,8 @@ body {
 #quote {
   text-align: center;
   font-weight: 100;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
   animation:
     fade 8s;
 }
