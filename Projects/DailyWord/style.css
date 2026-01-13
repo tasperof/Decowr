@@ -3,10 +3,10 @@ body {
   background: #11111100;/* ISKO transparent karna hai*/
   color: #eeeeee;
   display: grid;
-  place-items: center;
-  padding-left: 10%;
+  place-items: left;
+  padding-left: 0%;
   padding-right: 10%;
-  text-align: center;
+  text-align: left;
 }
 
 #word {
