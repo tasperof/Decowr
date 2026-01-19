@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  background: #0b0d12;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.topbar {
+  padding: 0.75%;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.02);
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.control {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+button {
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #000;
+  font-weight: 600;
+}
+
+button.secondary {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, 10fr);
+  height: calc(100vh - 120px);
+}
+
+.swatch {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 14px;
+  transition: transform 0.15s ease;
+}
+
+
+.label {
+  width: 75%;
+  max-width: 170px;
+  background: rgba(0, 0, 0, 0.226);
+  padding: 4px 6px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  backdrop-filter: blur(6px);
+}
+
+.hex {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.lock {
+  width: 34px;
+  height: 34px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.toast {
+  position: fixed;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 14px;
+  border-radius: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+/* responsive columns */
+@media (max-width: 900px) {
+  .palette { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 520px) {
+  .palette { grid-template-columns: repeat(2, 1fr); }
+}
