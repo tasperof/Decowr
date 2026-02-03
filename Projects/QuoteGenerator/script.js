@@ -14,7 +14,7 @@ fetch(SHEET_URL)
     
     const dayid = dayOfYearIndex(new Date());
     console.log(dayid);
-    const rows = csv.trim().split("\n").slice(1)[0].split(",");
+    const rows = csv.trim().split("\n").slice(1)[dayid].split(",");
 
     const author = rows.slice(1)[0];
 
