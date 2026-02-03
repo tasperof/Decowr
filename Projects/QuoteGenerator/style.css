@@ -2,7 +2,7 @@ body {
   font-family: "Lexend Deca";
   background: #11111100;/* ISKO transparent karna hai*/
   color: #eeeeee;
-  display: flex;
+  display: grid;
   place-items: center;
   padding-left: 5%;
   padding-right: 5%;
